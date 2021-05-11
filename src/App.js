@@ -1,24 +1,20 @@
 import React, { useState, useEffect } from "react";
 
-function Checkbox() {
-  const [checked, setChecked] = useState(false);
+const useAnyKeyToRender = () => {
+  const [, forceRender] = useState();
 
-   useEffect(() => {
-    alert(`checked: ${checked.toString()}`);
-  });
-
-  return (
-    <>
-      <input
-        type="checkbox"
-        value={checked}
-        onChange={() => setChecked(checked => !checked)}
-      />
-      {checked ? "checked" : "not checked"}
-    </>
-  );
-}
+  useEffect(() => {
+    window.addEventListener("keydown", forceRender);
+    return () => window.removeEventListener("keydown", forceRender);
+  }, []);
+};
 
 export default function App() {
-  return <Checkbox />;
+  useAnyKeyToRender();
+
+  useEffect(() => {
+    console.log("fresh render");
+  });
+
+  return <h1>Open the console</h1>;
 }
