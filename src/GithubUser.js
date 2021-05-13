@@ -23,12 +23,15 @@ export default function APP() {
     const [id, setID] = useState("learningreac" );
     const [fetchHistory, setFetchHistory] = useState(["learningreac", "moonhighway", "learningreac", "moonhighway"] );
 
-
+    const removeUser = username => {
+        const newHistory = fetchHistory.filter( item => item !== username);
+        setFetchHistory(newHistory);
+      };
 
     return (
         <>
             <InputBox initialID={id} onNewFetch={setID} setFetchHistory={setFetchHistory} fetchHistory={fetchHistory}/>
-            <HistoryList FetchList = {fetchHistory} setcurrentid= {setID} />
+            <HistoryList FetchList = {fetchHistory} setcurrentid= {setID} onRemove= {removeUser}/>
             <GitHubUser login={id} />
         </>
     )

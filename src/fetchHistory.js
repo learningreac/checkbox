@@ -1,7 +1,7 @@
 import React from 'react';
 import ListItem from './HistoryItem';
 
-const HistoryList = ({ FetchList, setcurrentid}) => {
+const HistoryList = ({ FetchList, setcurrentid, onRemove}) => {
 
     return (
         <>
@@ -11,6 +11,7 @@ const HistoryList = ({ FetchList, setcurrentid}) => {
                     key={i} 
                     username = {userID}
                     setcurrentid = {setcurrentid}
+                    onRemove = {onRemove}
                     />
                 ))}
             </ul>
