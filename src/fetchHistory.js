@@ -1,16 +1,16 @@
 import React from 'react';
 import ListItem from './HistoryItem';
 
-const HistoryList = ({ FetchList, onNewFetch}) => {
+const HistoryList = ({ FetchList, setcurrentid}) => {
 
     return (
         <>
             <ul>
-                {FetchList.map((item) => (
+                {FetchList.map((userID, i) => (
                     <ListItem 
-                    key={item} // key is id
-                    username = {item}
-                    onFetch = {onNewFetch}
+                    key={i} 
+                    username = {userID}
+                    setcurrentid = {setcurrentid}
                     />
                 ))}
             </ul>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const ListItem = ({username, onFetch}) =>
-   <li onClick = {() => onFetch(username)} > {username} </li>
+const ListItem = ({username, setcurrentid}) =>
+   <li onClick = {() => setcurrentid(username)} > {username} </li>
 
 export default ListItem;

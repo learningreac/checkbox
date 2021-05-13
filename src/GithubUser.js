@@ -21,14 +21,14 @@ function GitHubUser({ login }) {
 
 export default function APP() {
     const [id, setID] = useState("learningreac" );
-    const [fetchHistory, setFetchHistory] = useState(["learningreac"] );
-    //const NewFetch = para => setID(para);
+    const [fetchHistory, setFetchHistory] = useState(["learningreac", "moonhighway", "learningreac", "moonhighway"] );
+
 
 
     return (
         <>
             <InputBox initialID={id} onNewFetch={setID} setFetchHistory={setFetchHistory} fetchHistory={fetchHistory}/>
-            <HistoryList FetchList = {fetchHistory} onNewFetch= {setID} />
+            <HistoryList FetchList = {fetchHistory} setcurrentid= {setID} />
             <GitHubUser login={id} />
         </>
     )
