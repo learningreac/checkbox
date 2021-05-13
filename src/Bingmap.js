@@ -22,4 +22,4 @@ const BingMap = ({mapOptions}) =>{
     );
 }
 
-export default  BingMap;
+export default BingMap;
