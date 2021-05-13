@@ -1,16 +1,22 @@
 import React from 'react';
+import ListItem from './HistoryItem';
 
-const FetchHistory = ({ FetchList, newID }) => {
-    FetchList = [...FetchList, newID]
+const HistoryList = ({ FetchList, onNewFetch}) => {
 
     return (
         <>
             <ul>
-                {FetchList.map((item,i) => <li key={i}> {item} </li>)}
+                {FetchList.map((item) => (
+                    <ListItem 
+                    key={item} // key is id
+                    username = {item}
+                    onFetch = {onNewFetch}
+                    />
+                ))}
             </ul>
         </>
 
     );
 }
 
-export default FetchHistory;
+export default HistoryList;

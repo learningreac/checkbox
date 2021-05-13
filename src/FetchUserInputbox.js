@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FetchUser = ({fetchHistory, setFetchHistory, initialID, onNewFetch}) => {
+const InputBox = ({fetchHistory, setFetchHistory, initialID, onNewFetch}) => {
     const [id, setID] = useState(initialID);
 
     const submit = e => {
@@ -12,7 +12,6 @@ const FetchUser = ({fetchHistory, setFetchHistory, initialID, onNewFetch}) => {
     return (
         <form onSubmit={submit}>
             <input 
-                //value = {id}
                 onChange = {e => setID(e.target.value)}
                 type="text" 
                 placeholder='GitHub ID' 
@@ -24,4 +23,4 @@ const FetchUser = ({fetchHistory, setFetchHistory, initialID, onNewFetch}) => {
 
 }
 
-export default FetchUser;
+export default InputBox;

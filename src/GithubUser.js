@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import FetchUser from './FetchUserInputbox';
-import FetchHistory from './fetchHistory';
+import InputBox from './FetchUserInputbox';
+import HistoryList from './fetchHistory';
 
 function GitHubUser({ login }) {
     const [mydata, setData] = useState();
@@ -21,13 +21,14 @@ function GitHubUser({ login }) {
 
 export default function APP() {
     const [id, setID] = useState("learningreac" );
-    const [fetchHistory, setFetchHistory] = useState(["learningreac"] )
+    const [fetchHistory, setFetchHistory] = useState(["learningreac"] );
+    //const NewFetch = para => setID(para);
 
 
     return (
         <>
-            <FetchUser initialID={id} onNewFetch={setID} setFetchHistory={setFetchHistory} fetchHistory={fetchHistory}/>
-            <FetchHistory FetchList = {fetchHistory} />
+            <InputBox initialID={id} onNewFetch={setID} setFetchHistory={setFetchHistory} fetchHistory={fetchHistory}/>
+            <HistoryList FetchList = {fetchHistory} onNewFetch= {setID} />
             <GitHubUser login={id} />
         </>
     )
