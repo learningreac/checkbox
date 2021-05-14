@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import InputBox from './FetchUserInputbox';
+import InputBox from './Inputbox';
 import HistoryList from './fetchHistory';
 
 function GitHubUser({ login }) {
