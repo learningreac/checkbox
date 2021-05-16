@@ -1,6 +1,5 @@
-import React from 'react';
 
-const PushpinListUtil = ({map, pushpins}) => {
+export const bmapaddpushpins = (map, pushpins) => {
 
     pushpins.forEach(element => {
 
@@ -23,8 +22,5 @@ const PushpinListUtil = ({map, pushpins}) => {
 };
 
 
-const PushpinList= ()=><div>push pin list</div>
 
-
-export default PushpinList;
 

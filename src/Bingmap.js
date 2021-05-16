@@ -1,8 +1,9 @@
-import React, { useEffect, useRef} from "react";
+import React, { useEffect, useRef, createContext} from "react";
 import { loadBingApi } from "./BingmapLoader";
 
+const mapContext = createContext();
 
-const BingMap = ({mapOptions}) =>{
+const BingMap = ({mapOptions, setMap}) =>{
     const mapRef = useRef();
 
     useEffect(()=>{
@@ -13,6 +14,8 @@ const BingMap = ({mapOptions}) =>{
             if (mapOptions) {
                 map.setOptions(mapOptions);
             }
+
+            setMap(map);
  
             console.log('done load ms map');
         })

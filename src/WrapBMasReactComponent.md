@@ -1,6 +1,6 @@
-#### How to wrap Bing Map as a React Component
+ ###BingMap with React
 
-##### Loanding Bing Map with normal Js
+#### Loanding Bing Map with normal Js
 Using Bing Map API is easy as following:
 1.  Reference to the Bing Maps SDK 
             <script type='text/javascript'
@@ -15,7 +15,7 @@ Using Bing Map API is easy as following:
 3.    creat a <div> in your HTML <body> to show the map, whose id is one linked with the MAP we created in step 2.
             <div id="myMap" style="position:relative;width:100%;height:100%;"></div>
 
-##### Using BM with React
+#### BM as a React component
 ###### Component tree structure
       <BingmapAPP>
          <Bingmap>
@@ -31,7 +31,9 @@ Using Bing Map API is easy as following:
 - Which means when we use JSX creating the map variable, we need access DOM. This is where we need useRef(here is mapRef). 
 - Why useEffect but not fetch directly??  (beacuse we need request data from the web)
 
-
+#### Add pushpin results
+###### Plan
+Add pushpin text list  => pushpin points show on the map => Add action and interaction for pps between map and text field
 
 
 #. loading sequence and component lifeCycle.
