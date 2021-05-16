@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, createContext} from "react";
+import React, { useEffect, useRef} from "react";
 import { loadBingApi } from "./BingmapLoader";
 
-const mapContext = createContext();
 
 const BingMap = ({mapOptions, setMap}) =>{
     const mapRef = useRef();
