@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import InputBox from './Inputbox';
-import HistoryList from './fetchHistory';
+import HistoryList from './HistoryList';
 
 function GitHubUser({ login }) {
     const [mydata, setData] = useState();

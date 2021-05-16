@@ -1,0 +1,365 @@
+{
+    "authenticationResultCode": "ValidCredentials",
+    "brandLogoUri": "http:\/\/dev.virtualearth.net\/Branding\/logo_powered_by.png",
+    "copyright": "Copyright © 2021 Microsoft and its suppliers. All rights reserved. This API cannot be accessed and the content and any results may not be used, reproduced or transmitted in any manner without express written permission from Microsoft Corporation.",
+    "resourceSets": [
+        {
+            "estimatedTotal": 10,
+            "resources": [
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "Cascade Playground",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.621566772460938,
+                            -122.33173370361328
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "333 Pontius Ave N",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "333 Pontius Ave N, Seattle, WA, 98109",
+                        "locality": "Seattle",
+                        "postalCode": "98109"
+                    },
+                    "PhoneNumber": "(206) 458-0253",
+                    "Website": "https:\/\/www.cascadeplayground.org\/",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.621501922607422,
+                                -122.33229827880859
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "Beacon Hill Playground",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.586238861083984,
+                            -122.31600189208984
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "1902 13th Ave S",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "1902 13th Ave S, Seattle, WA, 98144",
+                        "locality": "Seattle",
+                        "postalCode": "98144"
+                    },
+                    "PhoneNumber": "(206) 684-4075",
+                    "Website": "http:\/\/seattle.gov\/parks\/park_detail.asp?ID=400",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.586215972900391,
+                                -122.31529235839844
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "T.T. Minor Playground",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.612907409667969,
+                            -122.31005096435547
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "1698 E Union St",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "1698 E Union St, Seattle, WA, 98122",
+                        "locality": "Seattle",
+                        "postalCode": "98122"
+                    },
+                    "PhoneNumber": "(206) 684-4075",
+                    "Website": "http:\/\/seattle.gov\/parks\/park_detail.asp",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.613559722900391,
+                                -122.31006622314453
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "Spruce Street Mini Park",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.603092193603516,
+                            -122.30504608154297
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "160 21st Ave",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "160 21st Ave, Seattle, WA, 98122",
+                        "locality": "Seattle",
+                        "postalCode": "98122"
+                    },
+                    "PhoneNumber": "(206) 684-4075",
+                    "Website": "http:\/\/seattle.gov\/parks\/park_detail.asp?ID=3117",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.603073120117188,
+                                -122.30467224121094
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "Spring Street Mini Park",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.611564636230469,
+                            -122.31288146972656
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "1506 E Spring St",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "1506 E Spring St, Seattle, WA, 98122",
+                        "locality": "Seattle",
+                        "postalCode": "98122"
+                    },
+                    "PhoneNumber": "(206) 684-4075",
+                    "Website": "http:\/\/seattle.gov\/parks\/park_detail.asp?ID=381",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.611141204833984,
+                                -122.31287384033203
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "Madrona Playground",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.611652374267578,
+                            -122.28987121582031
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "3211 E Spring St",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "3211 E Spring St, Seattle, WA, 98122",
+                        "locality": "Seattle",
+                        "postalCode": "98122"
+                    },
+                    "PhoneNumber": "(206) 684-4075",
+                    "Website": "http:\/\/seattle.gov\/parks\/park_detail.asp?ID=371",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.611137390136719,
+                                -122.28995513916016
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "Peppi's Playground",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.603206634521484,
+                            -122.29058837890625
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "3233 E Spruce St",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "3233 E Spruce St, Seattle, WA, 98122",
+                        "locality": "Seattle",
+                        "postalCode": "98122"
+                    },
+                    "PhoneNumber": "(206) 684-4075",
+                    "Website": "http:\/\/seattle.gov\/parks\/park_detail.asp?ID=378",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.602775573730469,
+                                -122.29065704345703
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "Powell Barnett Park",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.604793548583984,
+                            -122.29615020751953
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "352 Martin Luther King Jr Way E",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "352 Martin Luther King Jr Way E, Seattle, WA, 98112",
+                        "locality": "Seattle",
+                        "postalCode": "98112"
+                    },
+                    "PhoneNumber": "(206) 684-4075",
+                    "Website": "http:\/\/www.seattle.gov\/Parks\/park_detail.asp?id=345",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.604793548583984,
+                                -122.29615020751953
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "Seattle Childrens Playgarden",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.587619781494141,
+                            -122.30130004882812
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "1745 24th Ave S",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "1745 24th Ave S, Seattle, WA, 98144",
+                        "locality": "Seattle",
+                        "postalCode": "98144"
+                    },
+                    "PhoneNumber": "(206) 325-5576",
+                    "Website": "https:\/\/childrensplaygarden.org\/",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.587539672851562,
+                                -122.30190277099609
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__type": "SearchResult:http:\/\/schemas.microsoft.com\/search\/local\/ws\/rest\/v1",
+                    "name": "East Queen Anne Playground",
+                    "point": {
+                        "type": "Point",
+                        "coordinates": [
+                            47.636142730712891,
+                            -122.35442352294922
+                        ]
+                    },
+                    "Address": {
+                        "addressLine": "1912 Warren Ave N",
+                        "adminDistrict": "WA",
+                        "countryRegion": "US",
+                        "formattedAddress": "1912 Warren Ave N, Seattle, WA, 98109",
+                        "locality": "Seattle",
+                        "postalCode": "98109"
+                    },
+                    "PhoneNumber": "(206) 684-4075",
+                    "Website": "http:\/\/seattle.gov\/parks\/park_detail.asp?ID=329",
+                    "entityType": "LocalBusiness",
+                    "geocodePoints": [
+                        {
+                            "type": "Point",
+                            "coordinates": [
+                                47.636123657226563,
+                                -122.35379028320312
+                            ],
+                            "calculationMethod": "Rooftop",
+                            "usageTypes": [
+                                "Display"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "statusCode": 200,
+    "statusDescription": "OK",
+    "traceId": "78fdd6abb2b44fa9b57d3b665bdb1d4d|CO00001126|0.0.0.0"
+}

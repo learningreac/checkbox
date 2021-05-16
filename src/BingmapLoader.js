@@ -12,6 +12,7 @@
     //const callbackName = "bingAPIReady";
     const callbackName = "GetMap";
     let url = `https://www.bing.com/api/maps/mapcontrol?callback=${callbackName}`;
+    // let url = `https://www.bing.com/api/maps/mapcontrol?`;
     if (key) {
       url += `&key=${key}`;
     }
@@ -26,6 +27,11 @@
         // Microsoft = window.Microsoft;
         resolve();
       };
+
+      script.addEventListener('load', () => {
+        // resolve()
+      })
+
       script.onerror = (error) => {
         reject(error);
       };
