@@ -21,14 +21,14 @@ export default function APP() {
             .then(response => response.json())
             .then(obj => { console.log(obj); setMList(obj); })
             .catch(console.error);
-    }, []);
+    }, [SearchText]);
 
     if (null == mldata)
     return <div>loading... </div>
 
     return (
         <div className="App">
-            <SearchInputBox />
+            <SearchInputBox onNewSearch={setSearchText}/>
             <MovieList movies={mldata.Search}/>
             <FetchMovieDetail id={ID}/>
         </div>

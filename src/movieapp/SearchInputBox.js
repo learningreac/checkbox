@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import {PageHeader, Input, Button } from 'antd';
 
-const SearchInputBox = ({OnSearch}) => {
+const SearchInputBox = ({onNewSearch}) => {
     const [searchText, setSearchText] = useState(null);
 
     const submit = e => {
         e.preventDefault();
-        OnSearch(searchText);
+        onNewSearch(searchText);
     };
 
     return (
