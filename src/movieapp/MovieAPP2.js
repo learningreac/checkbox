@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 import SearchInputBox from './SearchInputBox';
 import MovieList from './MovieList';
@@ -26,6 +27,7 @@ export default function APP() {
     return <div>loading... </div>
 
     return (
+
         <div className="App">
             <SearchInputBox onNewSearch={setSearchText}/>
             <MovieList movies={mldata.Search} onNewFetch={setID}/>
