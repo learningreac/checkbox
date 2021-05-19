@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MovieDetail from './Moviedetail';
+import SearchInputBox from './SearchInputBox';
+import MovieList from './MovieList';
 import './App.css';
 
 const API_URL = 'https://omdbapi.com';
@@ -24,6 +26,8 @@ export default function APP() {
 
     return (
         <div className="App">
+            <SearchInputBox />
+            <MovieList />
             <MovieDetail
                 isFetching={false}
                 Title={mdata.Title}

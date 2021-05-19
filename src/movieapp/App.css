@@ -21,7 +21,17 @@
   margin-right: 15px;
 }
 
+/* movie list */
+.movie-list {
+  margin-top: 20px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  overflow: auto;
+  padding: 8px 24px;
+  height: 600px;
+}
 
+/*index.js*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
