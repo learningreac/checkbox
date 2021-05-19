@@ -12,7 +12,7 @@ export default function FetchMovieDetail({ id }) {
             .then(response => response.json())
             .then(obj => { console.log(obj); setData(obj); })
             .catch(console.error);
-    }, []);
+    }, [id]);
 
     if (null == mdata)
         return <div>loading... </div>

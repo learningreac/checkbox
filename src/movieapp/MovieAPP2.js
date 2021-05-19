@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import SearchInputBox from './SearchInputBox';
 import MovieList from './MovieList';
-import movieListData from './movielistdata.json';
 import FetchMovieDetail from './FetchMovieDetail'
 import './App.css';
 
@@ -29,7 +28,7 @@ export default function APP() {
     return (
         <div className="App">
             <SearchInputBox onNewSearch={setSearchText}/>
-            <MovieList movies={mldata.Search}/>
+            <MovieList movies={mldata.Search} onNewFetch={setID}/>
             <FetchMovieDetail id={ID}/>
         </div>
     )

@@ -1,19 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { List, Avatar } from 'antd';
 
-const MovieList = ({ movies}) => {
+//function MovieTitle({title}) {
+//    return <a onClick={e=>console.log(title)}>{title}</a>;
+//}
 
-    useEffect(() =>
-        console.log(movies)
-    );
+const MovieList = ({ movies,onNewFetch}) => {
+
+//    useEffect(() =>
+//        console.log(movies)
+//    );
     return (
         <div className='movie-list'>
             <List itemLayout='horizontal'>
                 {movies.map((movie,index) => (
-                    <List.Item key={movie.imdbID}>
+                    <List.Item key={movie.imdbID} >
                         <List.Item.Meta
                             avatar={<Avatar src={movie.Poster} />}
-                            title={movie.Title}
+                            //title={<MovieTitle title={movie.Title}/>}
+                            title={<a onClick={() => {console.log(movie.imdbID); onNewFetch(movie.imdbID)}}>{movie.Title}</a>}
                             description={movie.Year}
                         />
                     </List.Item>
