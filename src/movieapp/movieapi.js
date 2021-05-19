@@ -18,6 +18,5 @@ export default function FetchMovieDetail( id ) {
     }, [id]);
 
     if (mdata)
-        console.log(mdata);
         return mdata;
 }
