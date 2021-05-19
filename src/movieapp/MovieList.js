@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { List, Avatar } from 'antd';
-import movieListData from './movielistdata.json';
 
-const MovieList = () => {
-let movies = movieListData.Search;
+const MovieList = ({ movies}) => {
 
     useEffect(() =>
-        console.log(movieListData.Search)
+        console.log(movies)
     );
     return (
         <div className='movie-list'>
@@ -14,7 +12,7 @@ let movies = movieListData.Search;
                 {movies.map((movie,index) => (
                     <List.Item key={movie.imdbID}>
                         <List.Item.Meta
-                            avatar={<Avatar src={movie.poster} />}
+                            avatar={<Avatar src={movie.Poster} />}
                             title={movie.Title}
                             description={movie.Year}
                         />

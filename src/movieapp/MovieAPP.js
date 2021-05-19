@@ -2,15 +2,18 @@ import React, { useState, useEffect } from 'react';
 import MovieDetail from './Moviedetail';
 import SearchInputBox from './SearchInputBox';
 import MovieList from './MovieList';
+import movieListData from './movielistdata.json';
 import './App.css';
 
 const API_URL = 'https://omdbapi.com';
 const API_KEY = 'b947c005';
 const id = 'tt1563738';
-
+const movies = movieListData.Search;
 
 export default function APP() {
+    const [mldata, setMList] = useState(movies); //
     const [mdata, setData] = useState(null);
+ 
 
     useEffect(() => {
         fetch(`${API_URL}?apikey=${API_KEY}&i=${id}`)
@@ -18,6 +21,8 @@ export default function APP() {
             .then(obj => { console.log(obj); setData(obj); })
             .catch(console.error);
     }, []);
+
+    
 
     // return {mdata}?<div> {JSON.stringify(mdata)} </div>:<div>loading...</div>
 
@@ -27,7 +32,7 @@ export default function APP() {
     return (
         <div className="App">
             <SearchInputBox />
-            <MovieList />
+            <MovieList movies={mldata}/>
             <MovieDetail
                 isFetching={false}
                 Title={mdata.Title}
