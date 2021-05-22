@@ -5,7 +5,8 @@ import { List, Avatar } from 'antd';
 //    return <a onClick={e=>console.log(title)}>{title}</a>;
 //}
 
-const MovieList = ({ movies,onNewFetch}) => {
+
+const MovieList = ({ movies,ClickforDetail}) => {
 
 //    useEffect(() =>
 //        console.log(movies)
@@ -18,7 +19,7 @@ const MovieList = ({ movies,onNewFetch}) => {
                         <List.Item.Meta
                             avatar={<Avatar src={movie.Poster} />}
                             //title={<MovieTitle title={movie.Title}/>}
-                            title={<a onClick={() => {console.log(movie.imdbID); onNewFetch(movie.imdbID)}}>{movie.Title}</a>}
+                            title={<a onClick={() => {console.log(movie.imdbID); ClickforDetail(movie.imdbID)}}>{movie.Title}</a>}
                             description={movie.Year}
                         />
                     </List.Item>
