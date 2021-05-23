@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import MovieDetail from './Moviedetail';
 import {useMovie} from './MovieProvider';
+// import { withRouter } from "react-router-dom";
 
 const API_URL = 'https://omdbapi.com';
 const API_KEY = 'b947c005';
@@ -29,3 +30,5 @@ export default function FetchMovieDetail( ) {
         />
     )
 }
+
+// FetchMovieDetail = withRouter(FetchMovieDetail);

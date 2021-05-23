@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import {PageHeader, Input, Button } from 'antd';
 import {useMovie} from './MovieProvider';
 

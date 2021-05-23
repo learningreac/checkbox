@@ -20,6 +20,12 @@
     - router
     - infinit roll
 
-#####updata:5/19
+#####update:5/19
 1.Connect SearchInputBox and MovieList. Add onSubmit event on SearchInputBox: you pass the setSearchText to that component, and capture text change;when submit, searchText is updated, and APP will fetch new mldata, which will cause re-render of movie list.
 2.Connect MovieList and MovieDetail. as this part use ant design List, the way to add a onClick event is a little bit different. You need wrap onClick by <a(herf)>.
+
+##### update: 5/21
+1. wrap movielist and fetch movie list in an seperate file.
+2. add useContext for shared variables as MovieProvider; wrap it with a custom hook as useMovie.
+3. to do: add router so movie detail render in a 'seperate' page. add infinite roll for movie list.
+4. my questions: currently, my data and ui are in the same file. how to refine this part?

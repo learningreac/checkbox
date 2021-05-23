@@ -1,20 +1,26 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-
-import SearchInputBox from './SearchInputBox';
-import FetchMovieDetail from './FetchMovieDetail';
-import MovieListContainer from './MovieListContainer';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
+import Home from './Home';
+import FetchMovieDetail from './FetchMovieDetail';
+import { useRoutes } from "react-router-dom";
 
+function AppRoute() {
+    let element = useRoutes([
+        { path: "/", element: <Home /> },
+        { path: "movie", element: <FetchMovieDetail />, },
+    ]);
+    return element;
+}
 
 
 export default function APP() {
-   
+
     return (
         <div className="App">
-            <SearchInputBox />
-            <MovieListContainer />       
-            <FetchMovieDetail />
+            <Router>
+                <AppRoute/>
+            </Router>
         </div>
     )
 }
