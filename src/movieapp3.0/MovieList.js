@@ -13,7 +13,11 @@ const MovieList = ({ movies,ClickforDetail}) => {
                         <List.Item.Meta
                             avatar={<Avatar src={movie.Poster} />}
                             //title={<MovieTitle title={movie.Title}/>}
-                            title={<a onClick={() => {console.log(movie.imdbID); navigate(`/movie`); ClickforDetail(movie.imdbID)}}>{movie.Title}</a>}
+                            title={<a onClick={() => {
+                                        console.log(movie.imdbID); 
+                                        navigate(`/movie`); 
+                                        ClickforDetail(movie.imdbID)}
+                                    }>{movie.Title}</a>}
                             description={movie.Year}
                         />
                     </List.Item>

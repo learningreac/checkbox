@@ -29,3 +29,6 @@
 2. add useContext for shared variables as MovieProvider; wrap it with a custom hook as useMovie.
 3. to do: add router so movie detail render in a 'seperate' page. add infinite roll for movie list.
 4. my questions: currently, my data and ui are in the same file. how to refine this part?
+
+### react coun't resolve history
+https://stackoverflow.com/questions/45817017/module-not-found-error-cant-resolve-history-in-types-history
