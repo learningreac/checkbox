@@ -13,7 +13,7 @@ function geturl(SearchText) {
 
 export default function MovieListContainer (){
     const [mldata, setMList] = useState(null); // movielist data
-    const {SearchText, setID} = useMovie();
+    const {SearchText} = useMovie();
 
         // search movie list
         useEffect(() => {
@@ -30,6 +30,6 @@ export default function MovieListContainer (){
         return <div>loading... </div>
     
         return (
-            <MovieList movies={mldata.Search} ClickforDetail={setID}/>
+            <MovieList movies={mldata.Search}/>
         )
 }

@@ -8,7 +8,7 @@ import { useRoutes } from "react-router-dom";
 function AppRoute() {
     let element = useRoutes([
         { path: "/", element: <Home /> },
-        { path: "movie", element: <FetchMovieDetail />, },
+        { path: "movie/:ID", element: <FetchMovieDetail />, },
     ]);
     return element;
 }

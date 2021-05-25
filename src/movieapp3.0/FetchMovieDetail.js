@@ -1,21 +1,23 @@
 import React,{useState, useEffect} from 'react';
 import MovieDetail from './Moviedetail';
 import {useMovie} from './MovieProvider';
-// import { withRouter } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const API_URL = 'https://omdbapi.com';
 const API_KEY = 'b947c005';
 
 export default function FetchMovieDetail( ) {
     const [mdata, setData] = useState(null);
-    const {ID} = useMovie()
+
+    let params = useParams(); // return the ID of the movie in an obj
+    console.log(params);
 
     useEffect(() => {
-        fetch(`${API_URL}?apikey=${API_KEY}&i=${ID}`)
+        fetch(`${API_URL}?apikey=${API_KEY}&i=${params.ID}`)
             .then(response => response.json())
             .then(obj => { console.log(obj); setData(obj); })
             .catch(console.error);
-    }, [ID]);
+    }, [params.ID]);
 
     if (null == mdata)
         return <div>loading... </div>
@@ -30,5 +32,3 @@ export default function FetchMovieDetail( ) {
         />
     )
 }
-
-// FetchMovieDetail = withRouter(FetchMovieDetail);
