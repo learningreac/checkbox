@@ -1,22 +1,28 @@
-### Project Map
+# Project Map
 
-++++ GithubUser APP
-++++ BingMap APP
-++++ Movie APP
+| Project Name | Description |
+| ----------- | ----------- |
+|GithubUser APP | Title |
+|BingMap APP | Text |
+|Movie APP  | text   |
 
 
-#### Movie APP 
-##### Project Plan
+
+## Movie APP 
+### Project Plan
 1. constrcut the API structure with off-line movie list data; two component: search and movie list
 2. set up Movie Detai page with useEffect and search. data:id.
 4. fetch serch results dynamically
 
-##### TimeLine
-##### update: 5/18
+### TimeLine
+#### update: 5/18
 1. the movie detail page only share single movie ID with APP, so I put it seperately. when you fetch and update movie data, the data only can be seen with this component.
-2.  const [mldata, setMList] = useState(null); // movielist data
+2.  
+    ```sh
+    const [mldata, setMList] = useState(null); // movielist data
     const [ID, setID] =useState('tt0381681'); // single movie id
     const [SearchText, setSearchText] = useState('sunset'); // search text
+    ```
 
     those are the three state I put at APP level. 
     SearchText is send up by SearchIputBox, and will be used to make a new fetch, which will update the movielist data.
@@ -28,11 +34,11 @@
     - router
     - infinit roll
 
-##### update:5/19
+#### update:5/19
 1.Connect SearchInputBox and MovieList. Add onSubmit event on SearchInputBox: you pass the setSearchText to that component, and capture text change;when submit, searchText is updated, and APP will fetch new mldata, which will cause re-render of movie list.
 2.Connect MovieList and MovieDetail. as this part use ant design List, the way to add a onClick event is a little bit different. You need wrap onClick by <a(herf)>.
 
-##### update: 5/21
+#### update: 5/21
 1. wrap movielist and fetch movie list in an seperate file.
 2. add useContext for shared variables as MovieProvider; wrap it with a custom hook as useMovie.
 3. to do: add router so movie detail render in a 'seperate' page. add infinite roll for movie list.
@@ -40,12 +46,12 @@
 
 
 
-##### update:5/23
+#### update:5/23
 Add router: with useRoutes and useNavigate. There there are two endpoints: page Home and page Movie.
 to do: now URL for all movies show in detail page is the same. try to change this to url.../movie/id  so that when user type the address with id, they can see that page directly.   Doing this way, fetch-movie-detail component all need do change its way using 'id' variable. 
 
 
-##### update:5/24
+#### update:5/24
 Fix the movie detai page routing with useParams.(see detail in Routing Parameters at Page265)
 To be fixed: nesting routes with useRoutes
 
