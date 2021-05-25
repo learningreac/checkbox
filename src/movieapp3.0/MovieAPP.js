@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRoutes } from "react-router-dom";
-import './App.css';
+import './movie.css';
 import MovieProvider from './MovieProvider';
 import Home from './Home';
 import FetchMovieDetail from './FetchMovieDetail';

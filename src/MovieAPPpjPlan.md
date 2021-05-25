@@ -1,9 +1,16 @@
-####Project Plan
+###Project Map
+++++GithubUser APP
+++++BingMap APP
+++++Movie APP
+
+
+#### Movie APP 
+##### Project Plan
 1. constrcut the API structure with off-line movie list data; two component: search and movie list
 2. set up Movie Detai page with useEffect and search. data:id.
 4. fetch serch results dynamically
 
-
+#####TimeLine
 #####update: 5/18
 1. the movie detail page only share single movie ID with APP, so I put it seperately. when you fetch and update movie data, the data only can be seen with this component.
 2.  const [mldata, setMList] = useState(null); // movielist data
@@ -40,3 +47,4 @@ to do: now URL for all movies show in detail page is the same. try to change thi
 
 ##### update:5/24
 Fix the movie detai page routing with useParams.(see detail in Routing Parameters at Page265)
+To be fixed: nesting routes with useRoutes

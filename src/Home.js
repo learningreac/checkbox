@@ -9,6 +9,7 @@ export default function Home() {
                 <Link  className='action-item' to='Githubuser'>GitHubUser</Link>
                 <Link  className='action-item' to='Bingmap'>BingMapApp</Link>
                 <Link  className='action-item' to='Basicrouter'>BasicRouter</Link>
+                <Link  className='action-item' to='Movieapp'>MovieApp</Link>
             </nav>
         </div>
     );

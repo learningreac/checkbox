@@ -4,17 +4,14 @@ import App from "./App";
 import './App.css';
 
 import { BrowserRouter as Router } from "react-router-dom";
-
-
-//import MovieAPP from './movieapp3.0/MovieAPP';
-
+import  MovieAPP from './movieapp3.0/MovieAPP';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <div className='App'>
-        <App />
+        <MovieAPP />
       </div>
     </Router>
   </React.StrictMode>,
