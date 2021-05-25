@@ -1,7 +1,8 @@
-###Project Map
-++++GithubUser APP
-++++BingMap APP
-++++Movie APP
+### Project Map
+
+++++ GithubUser APP
+++++ BingMap APP
+++++ Movie APP
 
 
 #### Movie APP 
@@ -10,8 +11,8 @@
 2. set up Movie Detai page with useEffect and search. data:id.
 4. fetch serch results dynamically
 
-#####TimeLine
-#####update: 5/18
+##### TimeLine
+##### update: 5/18
 1. the movie detail page only share single movie ID with APP, so I put it seperately. when you fetch and update movie data, the data only can be seen with this component.
 2.  const [mldata, setMList] = useState(null); // movielist data
     const [ID, setID] =useState('tt0381681'); // single movie id
@@ -27,7 +28,7 @@
     - router
     - infinit roll
 
-#####update:5/19
+##### update:5/19
 1.Connect SearchInputBox and MovieList. Add onSubmit event on SearchInputBox: you pass the setSearchText to that component, and capture text change;when submit, searchText is updated, and APP will fetch new mldata, which will cause re-render of movie list.
 2.Connect MovieList and MovieDetail. as this part use ant design List, the way to add a onClick event is a little bit different. You need wrap onClick by <a(herf)>.
 
@@ -37,8 +38,7 @@
 3. to do: add router so movie detail render in a 'seperate' page. add infinite roll for movie list.
 4. my questions: currently, my data and ui are in the same file. how to refine this part?
 
-### react coun't resolve history
-https://stackoverflow.com/questions/45817017/module-not-found-error-cant-resolve-history-in-types-history
+
 
 ##### update:5/23
 Add router: with useRoutes and useNavigate. There there are two endpoints: page Home and page Movie.
@@ -48,3 +48,7 @@ to do: now URL for all movies show in detail page is the same. try to change thi
 ##### update:5/24
 Fix the movie detai page routing with useParams.(see detail in Routing Parameters at Page265)
 To be fixed: nesting routes with useRoutes
+
+
+### react coun't resolve history
+https://stackoverflow.com/questions/45817017/module-not-found-error-cant-resolve-history-in-types-history
