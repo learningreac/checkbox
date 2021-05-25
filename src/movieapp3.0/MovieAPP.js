@@ -1,26 +1,55 @@
 import React from 'react';
-import { BrowserRouter as Router } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
 import './App.css';
+import MovieProvider from './MovieProvider';
 import Home from './Home';
 import FetchMovieDetail from './FetchMovieDetail';
-import { useRoutes } from "react-router-dom";
+
+
+
+/*
+        { path: "movieapp", element: <Home /> },
+        { path: "movieapp/movie/:ID", element: <FetchMovieDetail />, },
+
+
+        {
+            path: "index",
+            element: <p>index</p>,
+            children:[
+                {path: "about", element: <p>index about</p>}
+            ]
+        }
+
+        path: "/movieapp", 
+            element: <Home />,
+            children: [
+                { path: ":ID", element: <FetchMovieDetail /> },
+                { path: "about", element: <p>about!!!</p> }
+            ]
+*/
 
 function AppRoute() {
     let element = useRoutes([
-        { path: "/", element: <Home /> },
-        { path: "movie/:ID", element: <FetchMovieDetail />, },
+        {
+            path: "/movieapp", element: <Home />,
+            children: [
+                { path: "about", element: <p>about!!!</p> }
+            ]
+        },
+        { path: "/movieapp/movie/:ID", element: <FetchMovieDetail />, },
+
     ]);
     return element;
 }
 
 
-export default function APP() {
+export default function MovieAPP() {
 
     return (
-        <div className="App">
-            <Router>
-                <AppRoute/>
-            </Router>
-        </div>
+        <MovieProvider>
+            <div className="App">
+                <AppRoute />
+            </div>
+        </MovieProvider>
     )
 }

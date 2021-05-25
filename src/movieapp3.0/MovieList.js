@@ -1,6 +1,6 @@
 import React from 'react';
 import { List, Avatar } from 'antd';
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const MovieList = ({ movies}) => {
 
@@ -14,7 +14,7 @@ const MovieList = ({ movies}) => {
                             avatar={<Avatar src={movie.Poster} />}
                             title={<a onClick={() => {
                                         console.log(movie.imdbID); 
-                                        navigate(`/movie/${movie.imdbID}`); }
+                                        navigate(`movie/${movie.imdbID}`); }
                                     }>{movie.Title}</a> 
                               }
                             description={movie.Year}

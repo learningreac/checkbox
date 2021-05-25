@@ -16,7 +16,7 @@ const center = [47.60357, -122.32945];
 * 2 click pushpin on map will show more information
 * 3 click list item will focus on pushpins
 */
-export default function App() {
+export default function BingMapApp() {
   //const [ppdata,setData] = useState(pushpindata.resourceSets[0].resources);
   const [ppdata,setData] = useState();
   const [bmap, setMap]= useState(null);

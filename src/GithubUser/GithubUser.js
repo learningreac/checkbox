@@ -19,7 +19,7 @@ function GitHubUser({ login }) {
     return null;
 }
 
-export default function APP() {
+export default function GithubUserAPP() {
     const [id, setID] = useState("learningreac" );
     const [fetchHistory, setFetchHistory] = useState(["learningreac", "moonhighway", "learningreac", "moonhighway"] );
 
@@ -29,10 +29,10 @@ export default function APP() {
       };
 
     return (
-        <>
+        <div className='ant-page-body'>
             <InputBox initialID={id} onNewFetch={setID} setFetchHistory={setFetchHistory} fetchHistory={fetchHistory}/>
             <HistoryList FetchList = {fetchHistory} setcurrentid= {setID} onRemove= {removeUser}/>
             <GitHubUser login={id} />
-        </>
+        </div>
     )
 }

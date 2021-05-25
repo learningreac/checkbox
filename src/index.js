@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './App';
-//import BingmapAPP from './BingmapAPP';
-import MovieAPP from './movieapp3.0/MovieAPP';
-import MovieProvider  from './movieapp3.0/MovieProvider';
+import App from "./App";
+import './App.css';
+
+import { BrowserRouter as Router } from "react-router-dom";
+
+
+//import MovieAPP from './movieapp3.0/MovieAPP';
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <MovieProvider>
-      <MovieAPP />
-    </MovieProvider>
+    <Router>
+      <div className='App'>
+        <App />
+      </div>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
