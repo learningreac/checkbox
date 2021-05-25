@@ -36,3 +36,7 @@ https://stackoverflow.com/questions/45817017/module-not-found-error-cant-resolve
 ##### update:5/23
 Add router: with useRoutes and useNavigate. There there are two endpoints: page Home and page Movie.
 to do: now URL for all movies show in detail page is the same. try to change this to url.../movie/id  so that when user type the address with id, they can see that page directly.   Doing this way, fetch-movie-detail component all need do change its way using 'id' variable. 
+
+
+##### update:5/24
+Fix the movie detai page routing with useParams.(see detail in Routing Parameters at Page265)
