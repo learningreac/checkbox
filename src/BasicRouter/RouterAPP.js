@@ -1,17 +1,21 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import {
+import { Outlet} from "react-router-dom";
+import { RoutesHome} from './pages'
+/*import {
     Home,
     About,
     Events,
     Products,
     Contact
-} from "./pages";
+} from "./pages";*/
 
 export default function RouterApp() {
-    return (
+   return (
         <div>
-            <Routes>
+            <RoutesHome  />
+            <Outlet />
+        </div>)
+/*             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route
                     path="/about"
@@ -32,4 +36,5 @@ export default function RouterApp() {
             </Routes>
         </div>
     );
+*/
 }

@@ -12,7 +12,7 @@ const SearchInputBox = ( ) => {
     };
 
     return (
-        <div className='ant-page'>
+        <div className='ant-page' >
             <PageHeader title="Movie Database" />
             <div className='ant-page-body'>
                 <ul className='action'>

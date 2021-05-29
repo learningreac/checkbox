@@ -55,6 +55,9 @@ to do: now URL for all movies show in detail page is the same. try to change thi
 Fix the movie detai page routing with useParams.(see detail in Routing Parameters at Page265)
 To be fixed: nesting routes with useRoutes
 
+#### update:5/28
+refactoring the GithubUser App with React Hooks.
+
 
 ### react coun't resolve history
 https://stackoverflow.com/questions/45817017/module-not-found-error-cant-resolve-history-in-types-history

@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from 'react';
 import MovieDetail from './Moviedetail';
-import {useMovie} from './MovieProvider';
 import { useParams } from "react-router-dom";
 
 const API_URL = 'https://omdbapi.com';

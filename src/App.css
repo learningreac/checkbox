@@ -29,7 +29,16 @@
   overflow: auto;
   padding: 8px 24px;
   height: 600px;
+  width: 50%;
+ 
 }
+
+/*.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+*/
 
 /*index.js*/
 body {

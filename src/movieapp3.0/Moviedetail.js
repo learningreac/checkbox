@@ -11,7 +11,7 @@ export default function MovieDetail({
 
     return (
         <div className="ant-page-body">
-            <div className="movie">
+            <div className="grid-child">
                 {isFetching ? (
                     <span>Fetching movie details...</span>
                 ) : (

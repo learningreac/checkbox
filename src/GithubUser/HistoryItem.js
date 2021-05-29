@@ -6,7 +6,7 @@ const ListItem = ({ username, setcurrentid, onRemove}) => {
         <>
             <li>
                 <span onClick={() => setcurrentid(username)} > {username}</span>
-                <button onClick={() => onRemove(username)}> 
+                <button style={{marginLeft:'20px'}} onClick={() => onRemove(username)}> 
                     <FaTrash />
                 </button>
             </li>

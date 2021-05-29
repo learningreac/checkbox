@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import InputBox from './Inputbox';
 import HistoryList from './HistoryList';
+import GitHubUser from './fetchUserInfo';
 
-function GitHubUser({ login }) {
+/*function GitHubUser({ login }) {
     const [mydata, setData] = useState();
 
     useEffect(() => {
@@ -18,10 +19,11 @@ function GitHubUser({ login }) {
 
     return null;
 }
+*/
 
 export default function GithubUserAPP() {
     const [id, setID] = useState("learningreac" );
-    const [fetchHistory, setFetchHistory] = useState(["learningreac", "moonhighway", "learningreac", "moonhighway"] );
+    const [fetchHistory, setFetchHistory] = useState(["learningreac", "moonhighway"] );
 
     const removeUser = username => {
         const newHistory = fetchHistory.filter( item => item !== username);
