@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import InputBox from './Inputbox';
 import HistoryList from './HistoryList';
 import GitHubUser from './fetchUserInfo';
+import GithubProvider from './GithubUserProvider';
+
 
 /*function GitHubUser({ login }) {
     const [mydata, setData] = useState();
@@ -22,7 +24,7 @@ import GitHubUser from './fetchUserInfo';
 */
 
 export default function GithubUserAPP() {
-    const [id, setID] = useState("learningreac" );
+    /*const [id, setID] = useState("learningreac" );
     const [fetchHistory, setFetchHistory] = useState(["learningreac", "moonhighway"] );
 
     const removeUser = username => {
@@ -30,11 +32,15 @@ export default function GithubUserAPP() {
         setFetchHistory(newHistory);
       };
 
+      */
+
     return (
-        <div className='ant-page-body'>
-            <InputBox initialID={id} onNewFetch={setID} setFetchHistory={setFetchHistory} fetchHistory={fetchHistory}/>
-            <HistoryList FetchList = {fetchHistory} setcurrentid= {setID} onRemove= {removeUser}/>
-            <GitHubUser login={id} />
-        </div>
+        <GithubProvider>
+            <div className='ant-page-body'>
+                <InputBox />
+                <HistoryList  />
+                <GitHubUser />
+            </div>
+        </GithubProvider>
     )
 }

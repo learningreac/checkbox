@@ -1,17 +1,18 @@
 import React from 'react';
 import ListItem from './HistoryItem';
+import { useGit } from './GithubUserProvider';
 
-const HistoryList = ({ FetchList, setcurrentid, onRemove}) => {
+const HistoryList = ( ) => {
+    //FetchList={fetchHistory} setcurrentid={setID} onRemove={removeUser}
+    const { setID, fetchHistory, removeUser} = useGit();
 
     return (
         <>
             <ul>
-                {FetchList.map((userID, i) => (
+                {fetchHistory.map((userID, i) => (
                     <ListItem 
                     key={i} 
                     username = {userID}
-                    setcurrentid = {setcurrentid}
-                    onRemove = {onRemove}
                     />
                 ))}
             </ul>

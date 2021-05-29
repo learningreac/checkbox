@@ -10,7 +10,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <div className='App'>
-        <MovieAPP />
+        <App />
       </div>
     </Router>
   </React.StrictMode>,
