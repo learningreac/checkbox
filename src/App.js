@@ -1,6 +1,7 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
 import Home from './Home';
+import CounterApp from './reduxCounter/counterApp.js'
 import GithubUserAPP from './GithubUser/GithubUser';
 import BingMapApp from './BingMapAPP/BingmapAPP';
 import RouterApp from './BasicRouter/RouterAPP';
@@ -13,6 +14,7 @@ import  MovieAPP from './movieapp3.0/MovieAPP';
 function App() {
   let element = useRoutes([
     {path:'/', element:<Home />,},
+    { path: "reduxCounter", element: <CounterApp /> },
     { path: "Githubuser", element: <GithubUserAPP /> },
     { path: "Bingmap", element: <BingMapApp /> },
     { path: "Basicrouter", element: <RouterApp />,

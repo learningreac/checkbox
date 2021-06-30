@@ -59,5 +59,8 @@ To be fixed: nesting routes with useRoutes
 refactoring the GithubUser App with React Hooks.
 
 
+### To do Refactor the color list app with Reduex
+
+
 ### react coun't resolve history
 https://stackoverflow.com/questions/45817017/module-not-found-error-cant-resolve-history-in-types-history
