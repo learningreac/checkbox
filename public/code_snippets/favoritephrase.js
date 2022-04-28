@@ -13,11 +13,6 @@ export default function FavoritePhrase() {
     console.log(`typing '${val}' or '${phrase}'`);
   }, [val, phrase]);
 
-  /*useEffect(() => {
-    console.log(`saved phrase: '${phrase}'`);
-  }, [phrase]); // dependency array: the effect now is only invoked when the phrase value has changed. 
-  */
-
   return (
     <>
       <label>Favorite phrase:</label>

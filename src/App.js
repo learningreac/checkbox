@@ -7,9 +7,6 @@ import CounterApp from './reduxCounter/counterApp.js'
 import GithubUserAPP from './GithubUser/GithubUser';
 import RouterApp from './BasicRouter/RouterAPP';
 import { About, Events, Products, Contact } from "./BasicRouter/pages";
-import MovieAPP from './movieapp3.0/MovieAPP';
-
-//children:[ { path: "Movieapp/:ID", element: <FetchMovieDetail />} ]
 
 
 function App() {
